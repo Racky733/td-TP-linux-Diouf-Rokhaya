@@ -1,0 +1,176 @@
+    1  history -w
+    2  history
+    3  cat ~/.bash_history
+    4  su 
+    5  [root]# history -c
+    6  [root]# history -w
+    7  [root]# exit
+    8  su 
+    9  [root]# history -c
+   10  su -
+   11  sudo -i
+   12  touch exo1.md
+   13  nano exo1.md
+   14  git init
+   15  git add exo1.md
+   16  git commit -m "Exercice1"
+   17  git branch -M main
+   18  git remote add origin https://github.com/Racky733/td-TP-linux-Diouf-Rokhaya.git
+   19  git push -u origin main
+   20  git config --global user.name "Racky733"
+   21  git config --global user.email "rakidiouf00@gmail.com"
+   22  git push -u origin main
+   23  touch exo2.md
+   24  nano exo2.md
+   25  mkdir -p ~/arbo/home/groupeA/alice/cours ~/arbo/home/groupeA/bob ~/home/groupeB/carla/projects/tp1
+   26  touch ~arbo/home/groupeA/alice/cours/linux.txt ~arbo/home/groupA/alice/monfichier ~arbo/home/groupeA/bob/notes
+   27  touch ~/arbo/home/groupeA/alice/cours/linux.txt ~/arbo/home/groupA/alice/monfichier ~/arbo/home/groupeA/bob/notes
+   28  rm -r ./~arbo
+   29  mkdir -p ~/arbo/home/groupeA/alice/cours ~/arbo/home/groupeA/bob ~/arbo/home/groupeB/carla/projets/tp1
+   30  touch ~/arbo/home/groupeA/alice/cours/linux.txt ~/arbo/home/groupeA/alice/monfichier ~/arbo/home/groupeA/bob/notes
+   31  tree ~/arbo
+   32  cd home
+   33  cd groupA/alice/cours/linux.txt
+   34  cd groupA
+   35  cd ~arbo/home/groupeA/alice/cours/linux.txt
+   36  cd ~/arbo/home/groupeA/alice/cours
+   37  cat linux.txt
+   38  cd ../../bob
+   39  cd ../alice/cours
+   40  cd ../../../groupeB/carla/projets/tp1
+   41  cd ../../../../groupeA/alice/cours
+   42  pwd
+   43  cd ..
+   44  pwd
+   45  cd cours
+   46  cd ../../bob
+   47  pwd
+   48  cd ../../groupeB/./carla/projects/..
+   49  pwd
+   50  cd /
+   51  cd ..
+   52  pwd
+   53  cd
+   54  pwd
+   55  touch exo3.md
+   56  nano exo3.md
+   57  whoami
+   58  id
+   59  id -u
+   60  id -gn
+   61  id -Gn
+   62  nano exo3.md
+   63  who
+   64  date +%Y-%m-%d
+   65  date -d +%H:%M:%S
+   66  date +%H:%M:%S
+   67  date -d 2015-07-29 +%j
+   68  date +%s
+   69  date +%V
+   70  echo -e "Nom:/tRokhaya Diouf/nClasse:DBE"
+   71  echo -e "Nom :\tRokhaya Diouf\nClasse :\tDBE"
+   72  history
+   73  date +%s
+   74  history -w
+   75  tail ~/.bash_history
+   76  man ls
+   77  mkdir -p ~/tp_linux/docs/cours ~/tp_linux/docs/td ~/tp_linux/sauvegarde
+   78  cd tp_linux/docs/cours
+   79  touch chap1.txt chap2.txt chap6.txt
+   80  ls
+   81  touch -t 2025-01-01 chap1.txt
+   82  touch -t 20250101120000 chap1.txt
+   83  touch -t 202501011200 chap1.txt
+   84  ls -l
+   85  cd ../..
+   86  ls -R
+   87  ls -a
+   88  ls -d
+   89  ls -Ra
+   90  ls -ld
+   91  cd docs/cours
+   92  ls -i
+   93  ls -ltr
+   94  cd ../..
+   95  cd docs/td
+   96  touch fic1 fic2 fic3
+   97  mkdir rep
+   98  mv fic1 fic1_bis
+   99  cp fic2 rep
+  100  cp fic2 rep/fic2_copie
+  101  mv fic3 repinexistant
+  102  mv fic1_bis fic2 rep
+  103  cp -rp docs sauvegarde/
+  104  cp -Rp docs sauvegarde/
+  105  cp -a docs sauvegarde/
+  106  cd..
+  107  cd ..
+  108  cp -rp docs sauvegarde/
+  109  cd ..
+  110  cp -rp docs sauvegarde/
+  111  cd ..
+  112  rmdir tp_linux/sauvegarde/docs
+  113  rmdir -r tp_linux/sauvegarde/docs
+  114  rm -r tp_linux/sauvegarde/docs
+  115  touch /.-test
+  116  touch ./-test
+  117  rm -test
+  118  rm ./-test
+  119  rm -- -test
+  120  nano exo3.md
+  121  touch exo4.md
+  122  nano exo4.md
+  123  cp etc/passwd ~tp_linux/passwd.txt
+  124  mkdir -p etc/passwd
+  125  cp etc/passwd ~tp_linux/passwd.txt
+  126  rm -r ~/etc
+  127  cp etc/passwd ~/tp_linux/passwd.txt
+  128  cp /etc/passwd ~/tp_linux/passwd.txt
+  129  cd ~/tp_linux
+  130  ls
+  131  file passwd.txt
+  132  file /etc
+  133  file /bin/ls
+  134  file /dev/null
+  135  head -n 5 passwd.txt
+  136  tail -n 3 passwd.txt
+  137  cat -n passwd.txt
+  138  tac passwd.txt
+  139  wc -l passwd.txt
+  140  wc -c passwd.txt
+  141  sort -t: -k3 -n passwd.txt
+  142  sort -t: -k3 -nr passwd.txt
+  143  sort -t: -k3 -n -o passwd_trie.txt passwd.txt
+  144  echo -e "110\n20\n3" > nombres.txt
+  145  sort nombres.txt
+  146  sort -n nombres.txt
+  147  echo -e "3G\n120M\n45K\n2G\n980M\n7M\n15G\n512K" > taille.txt
+  148  sort -h taille.txt
+  149  sort -hr taille.txt
+  150  mkdir recherche
+  151  cd recherche
+  152  touche rapport1 rapport2 rapport12 rapports rapport_final.txt bilan.txt bilan.log
+  153  touch rapport1 rapport2 rapport12 rapports rapport_final.txt bilan.txt bilan.log
+  154  find recherche -name rapport*
+  155  find recherche -name "rapport*"
+  156  cd ..
+  157  find recherche -name "rapport*"
+  158  find recherche -name "rapport?"
+  159  find recherche -name "rapport[12]*"
+  160  find recherche -name "*.txt"
+  161  find ~/tp_linux -type d
+  162  find recherche -name "*.log" -exec rm {} \;
+  163  grep -w "^root" passwd.txt
+  164  grep -w "$/bin/bash" passwd.txt
+  165  grep -w "/bin/bash$" passwd.txt
+  166  grep -v "nologin$" passwd.txt
+  167  grep -i "ROOT" passwd.txt
+  168  cd ..
+  169  find /etc -name "HISTSIZE"
+  170  grep -r "HISTSIZE" /etc
+  171  whereis -b ls
+  172  whereis -m passwd.txt
+  173  whereis -m passwd
+  174  touch exo5.md
+  175  nano exo5.md
+  176  history > RokhayaDiouf.txt
